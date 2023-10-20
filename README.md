@@ -8,6 +8,10 @@
 
 각 CAM 종류들이 성능이 논문만큼 나왔는지 확인하고, 기존에 존재하지 않았던 Grad-CAM++을 활용하면 성능이 어느정도 나오는지 확인해보아요 !
 
+## Environments
+pretrained O
+datasets : CUB200-2011
+
 ## Grad-CAM & weakly supervised object localization
 WSOL 에 변형된 rethinkingCAM이 아닌 기존에 구현되어있던 Grad-CAM 을 활용해서 모델을 변형해보았습니다. 
 
