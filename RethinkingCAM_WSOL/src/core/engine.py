@@ -176,7 +176,7 @@ class Engine(BaseEngine):
             resultss = {}
             self.optimizer.zero_grad()
 
-            # Compute a loss
+            # Compute a loss - when you use gradcam, gradcam++,scorecam
             resultss = {'preds': results, 'labels': labels}
 
             resultss['labels'] = labels
@@ -262,7 +262,7 @@ class Engine(BaseEngine):
         #target_layers = [self.model.features[-2]]
 
         #use this in transformer
-        target_layers = [self.model.blocks[-1].norm1]
+        #target_layers = [self.model.blocks[-1].norm1]
 
         grad_cam = GradCAM
         grad_cam_plusplus = GradCAMPlusPlus
